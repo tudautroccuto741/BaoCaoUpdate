@@ -16,7 +16,7 @@ namespace DoAnQuanLiPhongMach
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new BaoCaoHDTong());
+            Application.Run(new FrmBCHDNgay());
         }
     }
 }

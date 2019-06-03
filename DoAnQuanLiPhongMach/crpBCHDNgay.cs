@@ -16,14 +16,14 @@ namespace DoAnQuanLiPhongMach {
     using CrystalDecisions.CrystalReports.Engine;
     
     
-    public class BaoCaoHDNgay : ReportClass {
+    public class crpBCHDNgay : ReportClass {
         
-        public BaoCaoHDNgay() {
+        public crpBCHDNgay() {
         }
         
         public override string ResourceName {
             get {
-                return "BaoCaoHDNgay.rpt";
+                return "crpBCHDNgay.rpt";
             }
             set {
                 // Do nothing
@@ -41,7 +41,7 @@ namespace DoAnQuanLiPhongMach {
         
         public override string FullResourceName {
             get {
-                return "DoAnQuanLiPhongMach.BaoCaoHDNgay.rpt";
+                return "DoAnQuanLiPhongMach.crpBCHDNgay.rpt";
             }
             set {
                 // Do nothing
@@ -90,7 +90,7 @@ namespace DoAnQuanLiPhongMach {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_date_star {
+        public CrystalDecisions.Shared.IParameterField Parameter_starDate {
             get {
                 return this.DataDefinition.ParameterFields[0];
             }
@@ -98,7 +98,7 @@ namespace DoAnQuanLiPhongMach {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_date_end {
+        public CrystalDecisions.Shared.IParameterField Parameter_endDate {
             get {
                 return this.DataDefinition.ParameterFields[1];
             }
@@ -106,9 +106,9 @@ namespace DoAnQuanLiPhongMach {
     }
     
     [System.Drawing.ToolboxBitmapAttribute(typeof(CrystalDecisions.Shared.ExportOptions), "report.bmp")]
-    public class CachedBaoCaoHDNgay : Component, ICachedReport {
+    public class CachedcrpBCHDNgay : Component, ICachedReport {
         
-        public CachedBaoCaoHDNgay() {
+        public CachedcrpBCHDNgay() {
         }
         
         [Browsable(false)]
@@ -145,7 +145,7 @@ namespace DoAnQuanLiPhongMach {
         }
         
         public virtual CrystalDecisions.CrystalReports.Engine.ReportDocument CreateReport() {
-            BaoCaoHDNgay rpt = new BaoCaoHDNgay();
+            crpBCHDNgay rpt = new crpBCHDNgay();
             rpt.Site = this.Site;
             return rpt;
         }

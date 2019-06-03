@@ -20,7 +20,7 @@ namespace QLPM_GUI
         DataTable table_PhieuKham = new DataTable();
         DataTable table_ChiTiet = new DataTable();
         DataTable table_BenhNhan = new DataTable();
-        DataTable table_NhanVien = new DataTable();
+        //DataTable table_NhanVien = new DataTable();
         DataTable table_NgayKham = new DataTable();
         DataRow row;
         DataRow row_benhnhan;
@@ -72,7 +72,7 @@ namespace QLPM_GUI
             txtMaPhieuKham.Text = DataProvider.Auto_Create_MaPK();
             table_PhieuKham = DataProvider.LoadCSDL("select * from tbl_PhieuKham");
             table_BenhNhan = DataProvider.LoadCSDL("select * from tbl_BenhNhan");
-            table_NhanVien = DataProvider.LoadCSDL("select * from tbl_NhanVien");
+            //table_NhanVien = DataProvider.LoadCSDL("select * from tbl_NhanVien");
             //      table_NgayKham = DataProvider.LoadCSDL("SELECT tbl_BenhNhan.Ngaykham FROM(tbl_PhieuKham INNER JOIN tbl_BenhNhan ON tbl_PhieuKham.MaBenhNhan = tbl_BenhNhan.MaBenhNhan) WHERE(((Tbl_PhieuKham.MaBenhNhan) = '"+cbxMaBenhNhan.Text+"'))");
             table_NgayKham = DataProvider.LoadCSDL("select Ngaykham from tbl_BenhNhan where MaBenhNhan ='" + cbxMaBenhNhan.Text + "'");
             cbxMaBenhNhan.DataSource = table_BenhNhan;
@@ -208,6 +208,11 @@ namespace QLPM_GUI
                     FrmPhieuKham.Show();
                 }
             }
+        }
+
+        private void gbxThongTinPhieuKham_Enter(object sender, EventArgs e)
+        {
+
         }
     }
 }

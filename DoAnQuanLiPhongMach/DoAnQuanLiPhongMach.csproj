@@ -60,17 +60,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BaoCaoHDNgay.cs">
+    <Compile Include="crpBCHDNgay.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>BaoCaoHDNgay.rpt</DependentUpon>
+      <DependentUpon>crpBCHDNgay.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="BaoCaoHDTong.cs">
+    <Compile Include="FrmBaoCaoHDTong.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="BaoCaoHDTong.Designer.cs">
-      <DependentUpon>BaoCaoHDTong.cs</DependentUpon>
+    <Compile Include="FrmBaoCaoHDTong.Designer.cs">
+      <DependentUpon>FrmBaoCaoHDTong.cs</DependentUpon>
     </Compile>
     <Compile Include="BaoCaoTongQuan.cs">
       <AutoGen>True</AutoGen>
@@ -78,45 +78,36 @@
       <DependentUpon>BaoCaoTongQuan.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="BCHDNgay.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="BCHDNgay.Designer.cs">
-      <DependentUpon>BCHDNgay.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ChonNgay.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ChonNgay.Designer.cs">
-      <DependentUpon>ChonNgay.cs</DependentUpon>
-    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmBCHDNgay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBCHDNgay.Designer.cs">
+      <DependentUpon>FrmBCHDNgay.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="BaoCaoHDNgay.rpt">
+    <EmbeddedResource Include="crpBCHDNgay.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>BaoCaoHDNgay.cs</LastGenOutput>
+      <LastGenOutput>crpBCHDNgay.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="BaoCaoHDTong.resx">
-      <DependentUpon>BaoCaoHDTong.cs</DependentUpon>
+    <EmbeddedResource Include="FrmBaoCaoHDTong.resx">
+      <DependentUpon>FrmBaoCaoHDTong.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="BaoCaoTongQuan.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>BaoCaoTongQuan.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="BCHDNgay.resx">
-      <DependentUpon>BCHDNgay.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ChonNgay.resx">
-      <DependentUpon>ChonNgay.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBCHDNgay.resx">
+      <DependentUpon>FrmBCHDNgay.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

@@ -10,16 +10,17 @@ using System.Windows.Forms;
 
 namespace DoAnQuanLiPhongMach
 {
-    public partial class ChonNgay : Form
+    public partial class FrmBaoCaoHDTong : Form
     {
-        public ChonNgay()
+        public FrmBaoCaoHDTong()
         {
             InitializeComponent();
         }
 
-        private void btLoad_Click(object sender, EventArgs e)
+        private void crystalReportViewer1_Load(object sender, EventArgs e)
         {
-            
+            BaoCaoTongQuan rpt = new BaoCaoTongQuan();
+            crystalReportViewer1.ReportSource = rpt;
         }
     }
 }

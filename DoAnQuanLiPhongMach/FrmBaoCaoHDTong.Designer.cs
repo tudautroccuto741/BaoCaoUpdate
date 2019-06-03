@@ -1,6 +1,6 @@
 ﻿namespace DoAnQuanLiPhongMach
 {
-    partial class BCHDNgay
+    partial class FrmBaoCaoHDTong
     {
         /// <summary>
         /// Required designer variable.
@@ -28,8 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.BaoCaoTongQuan1 = new DoAnQuanLiPhongMach.BaoCaoTongQuan();
             this.crystalReportViewer1 = new CrystalDecisions.Windows.Forms.CrystalReportViewer();
-            this.BaoCaoHDNgay1 = new DoAnQuanLiPhongMach.BaoCaoHDNgay();
+            this.BaoCaoTongQuan2 = new DoAnQuanLiPhongMach.BaoCaoTongQuan();
             this.SuspendLayout();
             // 
             // crystalReportViewer1
@@ -40,27 +41,27 @@
             this.crystalReportViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.crystalReportViewer1.Location = new System.Drawing.Point(0, 0);
             this.crystalReportViewer1.Name = "crystalReportViewer1";
-            this.crystalReportViewer1.ReportSource = this.BaoCaoHDNgay1;
+            this.crystalReportViewer1.ReportSource = this.BaoCaoTongQuan2;
             this.crystalReportViewer1.Size = new System.Drawing.Size(800, 450);
             this.crystalReportViewer1.TabIndex = 0;
             this.crystalReportViewer1.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None;
             this.crystalReportViewer1.Load += new System.EventHandler(this.crystalReportViewer1_Load);
             // 
-            // BCHDNgay
+            // BaoCaoHDTong
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.crystalReportViewer1);
-            this.Name = "BCHDNgay";
-            this.Text = "BCHDNgay";
+            this.Name = "BaoCaoHDTong";
+            this.Text = "BaoCaoHDTong";
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
+        private BaoCaoTongQuan BaoCaoTongQuan1;
         private CrystalDecisions.Windows.Forms.CrystalReportViewer crystalReportViewer1;
-        private BaoCaoHDNgay BaoCaoHDNgay1;
+        private BaoCaoTongQuan BaoCaoTongQuan2;
     }
 }
